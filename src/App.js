@@ -1,6 +1,8 @@
 import { Container, Navbar, NavbarBrand } from 'reactstrap';
 import NucampLogo from './app/assets/img/logo.png';
 import './App.css';
+import { CAMPSITES } from './app/shared/CAMPSITES';
+import CampsiteCard from './features/campsites/CampsiteCard';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
           </NavbarBrand>
         </Container>
       </Navbar>
-      I'm ready for workshop
+      <CampsiteCard campsite={CAMPSITES[0]} />
     </div>
   );
 }
